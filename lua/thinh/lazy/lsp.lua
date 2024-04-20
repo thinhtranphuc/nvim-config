@@ -2,6 +2,7 @@ return {
     "neovim/nvim-lspconfig",
     dependencies = {
         "williamboman/mason.nvim",
+        "mfussenegger/nvim-jdtls",
         "williamboman/mason-lspconfig.nvim",
         "hrsh7th/cmp-nvim-lsp",
         "hrsh7th/cmp-buffer",
@@ -51,6 +52,15 @@ return {
                         }
                     }
                 end,
+
+                ["java_language_server"] = function()
+                    local lspconfig = require("lspconfig")
+                    lspconfig.java_language_server.setup {
+                        capabilities = capabilities,
+                        on_attach = function(client, bufnr)
+                        end,
+                    }
+                end,
             }
         })
 
@@ -65,7 +75,7 @@ return {
             mapping = cmp.mapping.preset.insert({
                 ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
                 ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
-                ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+                ['<CR>'] = cmp.mapping.confirm({ select = true }),
                 ["<C-Space>"] = cmp.mapping.complete(),
             }),
             sources = cmp.config.sources({

@@ -10,7 +10,13 @@ return {
 
         config = function()
             local ls = require("luasnip")
+            ls.filetype_extend("c", { "cdoc" })
             ls.filetype_extend("javascript", { "jsdoc" })
+            ls.filetype_extend("java", { "javadoc" })
+            ls.filetype_extend("shell", { "shelldoc" })
+            ls.filetype_extend("rust", { "rustdoc" })
+            ls.filetype_extend("go", { })
+            ls.filetype_extend("r", { })
 
             --- TODO: What is expand?
             vim.keymap.set({"i"}, "<C-s>e", function() ls.expand() end, {silent = true})
