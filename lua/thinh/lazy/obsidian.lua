@@ -16,9 +16,10 @@ return {
                 workspaces = {
                     {
                         name = "personal",
-                        path = "/Users/thinh/project",
+                        path = "/Users/thinh/projects",
                     },
                 },
             })
         end
     }
+
