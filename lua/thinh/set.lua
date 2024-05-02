@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # vim.opt.guicursor = ""
-=======
-#vim.opt.guicursor = ""
->>>>>>> 02f4553 (aa)
 
 vim.opt.nu = true
 vim.opt.relativenumber = true

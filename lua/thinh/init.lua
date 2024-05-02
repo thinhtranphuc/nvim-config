@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-require("thinh.remap")
-
-=======
 require("thinh.set")
 require("thinh.remap")
 require("thinh.lazy_init")
@@ -66,8 +62,6 @@ autocmd('LspAttach', {
         vim.keymap.set("n", "]d", function() vim.diagnostic.goto_prev() end, opts)
     end
 })
-
->>>>>>> 02f4553 (aa)
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
