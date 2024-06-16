@@ -3,6 +3,8 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
+vim.g.omni_sql_no_default_maps = 1
+
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4

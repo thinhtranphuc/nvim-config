@@ -17,6 +17,9 @@ vim.keymap.set("n", "<leader>svwm", function()
     require("vim-with-me").StopVimWithMe()
 end)
 
+-- comment and uncomment
+vim.keymap.set("n", "<leader>cc", "gcc")
+
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
 

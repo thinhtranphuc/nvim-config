@@ -18,6 +18,10 @@ return {
                         name = "personal",
                         path = "/Users/thinh/projects",
                     },
+                    {
+                        name = "icloud",
+                        path = "/Users/thinh/Library/Mobile Documents/iCloud~md~obsidian/Documents/second-brain",
+                    },
                 },
             })
         end

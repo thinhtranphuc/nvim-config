@@ -15,7 +15,7 @@ return {
             ls.filetype_extend("java", { "javadoc", "java" })
             ls.filetype_extend("sh", { "shelldoc" })
             ls.filetype_extend("rust", { "rustdoc" })
-            ls.filetype_extend("python", {"python", "pydoc", "base", "comprehension" })
+            ls.filetype_extend("python", {"python"})
             ls.filetype_extend("go", { })
             ls.filetype_extend("r", { })
 
